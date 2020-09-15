@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box; /*resta automaticamente espesor de los bordes*/
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    margin-left: 5%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(56, 4, 56);
+    font-size: large;
+    height: 100px;
+}
+.filled-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: darkcyan;
+    font-size: large;
+    height: 100px;
+}
+.t-bold{
+    font-weight: bold;
+    color: yellow;
+}
+/*column=col*/
+.col-12 {
+    width: 100%;
+}
+.col-8 {
+    width: calc(100% / 1.5);
+}
+.col-6 {
+    width: calc(100% / 2);
+}
+.col-4 {
+    width: calc(100% / 3);
+}
+.col-3 {
+    width: calc(100% / 4);
+}
+.col-1 {
+    width: calc(100% / 12);
+}
+/*.col-1, .col-3, .col-4, .col-6, .col-8, .col-12 {
+    padding: 0rem 0.25rem 0.25rem 0;
+    padding: 0.12rem;
+}*/
+[class^=col-] {   
+    padding: 0.12rem;
+}
